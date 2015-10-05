@@ -1,0 +1,241 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>WD Co-operate Kick Start</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <link rel="stylesheet" href="css/mediaqueries.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+    <!-- Favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <!-- Navigational Bar -->
+    <nav id="nav-bar">
+        <div class="nav-hold">
+            <div class="nav-logo"><img src="images/logo.png" alt="Wire Delta" /></div>
+            <ul class="nav-list nav-open" id="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Process</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">References</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <div class="profile"><img src="images/profile.png" alt="Profile" /></div>
+            <div class="language"><img src="images/language.png" alt="Language" /></div>
+        </div>
+    </nav>
+    <!-- End of Navigational Bar -->
+    <!-- Map Section -->
+    <div class="container-fluid">
+        <div class="wrap">
+            <div class="map"><img src="images/map.jpg" alt="Map" /></div>
+            <div class="find-us">
+                <div class="title-text">Where can you find us</div>
+                <hr>
+                <div class="location1">
+                    <img src="images/locations/denmark.png" alt="Denmark" class="location-icon" />
+                    <span class="place">Denmark</span>
+                    <div class="address">Porcelænshaven 26,
+                        <br> 2nd floor,
+                        <br> 2000 Frederiksberg
+                        <br> Denmark
+                    </div>
+                </div>
+                <div class="location2">
+                    <img src="images/locations/france.png" alt="France" class="location-icon" />
+                    <span class="place">France</span>
+                    <div class="address">21 Rue,
+                        <br> Ernest Renan,
+                        <br> 75015 Paris
+                        <br> France
+                    </div>
+                </div>
+                <div class="location3">
+                    <img src="images/locations/coimbatore.png" alt="Coimbatore" class="location-icon" />
+                    <span class="place">India</span>
+                    <div class="address">No.293/2A,
+                        <br>Pollachi Main Road,
+                        <br> NH209, Myleripalayam Rd
+                        <br>641-032 Coimbatore
+                        <br>Tamil Nadu, India
+                    </div>
+                </div>
+                <div class="location4">
+                    <img src="images/locations/mysore.png" alt="Mysore" class="location-icon" />
+                    <span class="place">India</span>
+                    <div class="address">#1112, Contour Road,
+                        <br>10th Main,
+                        <br> Gokulam, 3rd Stage,
+                        <br>Mysore – 02
+                        <br> Karnataka, India
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Map Section -->
+    <!-- Information Section -->
+    <div class="container">
+        <div class="info-section">
+            <div class="info-header">
+                <p>Wiredelta would be thrilled to help you with your Project.</p>
+            </div>
+            <div class="msgbtn">
+                <button type="button" class="btn btn-default" id="send">Send us a message</button>
+                <div class="or">or</div>
+                <button type="button" class="btn btn-default" id="start">Kick start your project</button>
+            </div>
+            <form class="contact-form">
+                <!-- First Name -->
+                <div class="form-section">
+                    <label>First Name</label>
+                    <input type="text" name="fname">
+                </div>
+                <!-- Last Name -->
+                <div class="form-section">
+                    <label>Last Name</label>
+                    <input type="text" name="lname">
+                </div>
+                <!-- E-mail -->
+                <div class="form-section">
+                    <label>E-mail</label>
+                    <input type="text" name="email">
+                </div>
+                <!--Phone Number -->
+                <div class="form-section">
+                    <label>Phone Number</label>
+                    <input type="text" name="phone">
+                </div>
+                <!-- Company Name -->
+                <div class="form-section">
+                    <label>Company Name</label>
+                    <input type="text" name="cname">
+                </div>
+                <!-- Company Website-->
+                <div class="form-section">
+                    <label>Company Website</label>
+                    <input type="text" name="website">
+                </div>
+                <!-- Prototype-->
+                <div class="form-section">
+                    <label>Prototype</label>
+                    <div class="prototype">
+                        <span class="prototype-text">Do you have a drawing, sketch, or any other graphicalelements to visualize<br>
+                        the project?</span>
+                        <div class="choose">
+                            <button type="button" class="btn btn-default " id="file1">Choose File 1</button>
+                        </div>
+                        <div class="choose">
+                            <button type="button" class="btn btn-default" id="file2">Choose File 2</button>
+                        </div>
+                        <div class="upload">
+                            <button type="button" class="btn btn-default" id="upload">Upload Files</button>
+                        </div>
+                    </div>
+                </div>
+                <!--Urgency Level -->
+                <div class="form-section">
+                    <label>Urgency Level</label>
+                    <div class="chkBox">
+                        <ul class="check">
+                            <li>
+                                <input type="checkbox" id="chkBox1" onClick="toggle(this);">Low
+                            </li>
+                            <li>
+                                <input type="checkbox" id="chkBox2" onClick="toggle(this);">Medium
+                            </li>
+                            <li>
+                                <input type="checkbox" id="chkBox3" onClick="toggle(this);"> High
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- MESSAGE -->
+                <div class="form-section">
+                    <label>Project Description</label>
+                    <span class="project-text"> Focus on the futures you want to inlude in the application,especially the complex/original one.</span>
+                    <textarea name="message"></textarea>
+                </div>
+                <div class="form-section">
+                    <button type="button" class="btn btn-default" id="confirm">confirm</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--End of Information Section -->
+    <!-- Footer Section -->
+    <div class="container-fluid">
+        <footer>
+            <div>
+                <ul class="social">
+                    <li>
+                        <div id="linkedin"> <a href="#"><i class="fa fa-linkedin" ></i></a></div>
+                    </li>
+                    <li>
+                        <div id="google"><a href="#"><i class="fa fa-google-plus"></i></a></div>
+                    </li>
+                    <li>
+                        <div id="facebook"><a href="#"><i class="fa fa-facebook"></i></a></div>
+                    </li>
+                    <li>
+                        <div id="twitter"><a href="#"><i class="fa fa-twitter"></i></a></div>
+                    </li>
+                    <li>
+                        <div id="pinterest"><a href="#"><i class="fa fa-pinterest"></i></a></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-info">
+                <div class="showreel">
+                    <img src="images/footer/showreel.png" alt="WD Showreel" class="img-showreel" />
+                    <div class="reel"> wd showreel</div>
+                </div>
+                <div class="wd">
+                    <img src="images/footer/wd_logo.png" alt="WD Logo" class="img-wd" />
+                    <div class="wd-text">
+                        “Transforming volatile ideas into rock-solid products”
+                    </div>
+                    <img src="images/footer/wd_men.png" alt="WD Men" class="img-men" />
+                </div>
+                <div class="working"><img src="images/footer/working.png" class="img-work" alt="WD Working" />
+                    <div class="work"> Working @ wd</div>
+                </div>
+            </div>
+            <div class="copywrite">
+                <div class="con">
+                    <ul class="job">
+                        <li><a href="#">jobs</a></li>
+                        <li><a href="#">press</a></li>
+                    </ul>
+                </div>
+                <div class="copy-text">
+                    <span class="copy"> Copyright © 2015 Wiredelta.</span>
+                    <span class="rights">All Rights Reserved.</span>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer_bottom1">
+                        <a href="http://wiredelta.com/#!/en"><img src="images/footer/footer_bottom1.png" alt="WD Website" class="bottom1" /></a>
+                    </div>
+                    <div class="footer_bottom2">
+                        <a class="smoothscroll" href="#nav-bar"><img src="images/footer/uparrow.png" alt="ScrollUp" class="bottom1" /></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- End of Footer Section -->
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
